@@ -110,3 +110,41 @@
 //  }
 //  return 0;
 //}
+
+//// pointers
+//int main ()
+//{
+//  int  var1;
+//  char var2[10];
+//  
+//  printf("Address of var1 variable: %x\n", &var1  );
+//  printf("Address of var2 variable: %x\n", &var2  );
+//  
+//  return 0;
+//}
+
+//int main ()
+//{
+//  int  var = 20;   /* actual variable declaration */
+//  int  *ip;        /* pointer variable declaration */
+//  
+//  ip = &var;  /* store address of var in pointer variable*/
+//  
+//  printf("Address of the var variable is %x\n", &var);
+//  printf("Address stored in the ip pointer is %x\n", ip);
+//  printf("Value of the memmory location pointed by ip is  %d\n", *ip); //in this case use %d cos the value is int
+//}
+
+//int main()
+//{
+//  int x;            /* A normal integer*/
+//  int *p;           /* A pointer to an integer ("*p" is an integer, so p
+//                     must be a pointer to an integer) */
+//  
+//  p = &x;           /* Read it, "assign the address of x to p" */
+//  scanf( "%d", &x );          /* Put a value in x, we could also use p here */
+//  printf( "The value being referenced by pointer %d\n", *p ); /* Note the use of the * to get the value */
+//  printf( "The address of the variable x by using pointer %x\n", p );
+//  printf( "The address of the variable x by using x's address %x\n", &x );
+//  getchar();
+//}
