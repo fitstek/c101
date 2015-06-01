@@ -232,6 +232,7 @@
 				97B9FEA81B0E1E31002B3B70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
