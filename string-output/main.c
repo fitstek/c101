@@ -455,3 +455,23 @@
 //  
 //  return 0;
 //}
+
+//memory manipulation in array
+//array is the same as &array[0]
+//array + k is the same as &array[k]
+//*array is the same as array[0]
+//*(array + k) is the same as array[k]
+
+//int main(){
+//  int array[5];
+//  printf("Size of int: %lu\n", sizeof(int));
+//  printf("Size of short: %lu\n", sizeof(short));
+//  
+//  array[3] = 128;
+//  ((short*)array)[6] = 2;
+//  
+//  printf("Address of array[3]: %p\n", &array[3]);
+//  printf("Address of ((short*)array)[6]: %p\n", &((short*)array)[6]);
+//  
+//  printf("Fourth element of the array(array[3] is %d)", array[3]);
+//}
