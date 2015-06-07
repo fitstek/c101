@@ -331,3 +331,127 @@
 //  return 0;
 //}
 
+// C bit fields
+
+//#include <string.h>
+//
+//struct
+//{
+//  unsigned int widthValidated;
+//  unsigned int heightValidated;
+//} status1;
+//
+///* define a structure with bit fields */
+//struct
+//{
+//  unsigned int widthValidated : 1;
+//  unsigned int heightValidated : 1;
+//} status2;
+//
+//int main( )
+//{
+//  printf( "Memory size occupied by status1 : %lu\n", sizeof(status1));
+//  printf( "Memory size occupied by status2 : %lu\n", sizeof(status2));
+//  
+//  return 0;
+//}
+
+
+//// typeDef and define, typeDef used on.y for type where as define is used for anything, typeDef is processed in the compiler while define  in the preprocessor
+//
+////typedef unsigned char BYTE; example of how to
+//#include <string.h>
+//
+//typedef struct Books
+//{
+//  char  title[50];
+//  char  author[50];
+//  char  subject[100];
+//  int   book_id;
+//} Book;
+//
+//int main( )
+//{
+//  Book book;
+//  
+//  strcpy( book.title, "C Programming");
+//  strcpy( book.author, "Nuha Ali");
+//  strcpy( book.subject, "C Programming Tutorial");
+//  book.book_id = 6495407;
+//  
+//  printf( "Book title : %s\n", book.title);
+//  printf( "Book author : %s\n", book.author);
+//  printf( "Book subject : %s\n", book.subject);
+//  printf( "Book book_id : %d\n", book.book_id);
+//  
+//  return 0;
+//}
+
+
+
+//#define TRUE  1
+//#define FALSE 0
+//
+//int main( )
+//{
+//  printf( "Value of TRUE : %d\n", TRUE);
+//  printf( "Value of FALSE : %d\n", FALSE);
+//  
+//  return 0;
+//}
+
+// playing with memory
+//int main() {
+////  char ch = 'a';
+////  short s = ch;
+////  printf("%d", s);
+//  
+////  short s = 65;
+////  char ch = s;
+////  printf("%c", ch);
+//  
+////  int i = 37;
+////  float f1 = i;
+////  float f2 = *(float*)&i;
+////  
+////  printf("%f\n", f1);
+////  printf("%f", f2);
+//  
+////  float f = 7.0;
+////  short s1 = f;
+////  short s2 = *(short*)&f;
+////  
+////  printf("%d\n", s1);
+////  printf("%d", s2);
+//  
+////  double d = 3.1416;
+////  char ch = *(char*)&d;// first takes the address of d(&d) and then the char* tells it that the address is that of a single character so when it deferences it it takes only the data in the first byte and leaves the rest(7bytes)
+////  printf("%c", ch);
+//  
+////  short s = 45;
+////  double d = *(double*)&s; // in this case, d thinks it has 8 bytes and it takes the first 2 bytes from s and then take whatever binary resides in then next 6 bytes in memory
+//  
+//}
+
+//typedef struct Fractions {
+//  int numerator;
+//  int denumerator;
+//} fraction;
+//
+//int main() {
+//  
+//  fraction pi;
+//  pi.numerator = 10;
+//  pi.denumerator = 23;
+//  
+//  printf("The numerator is %d\n", pi.numerator);
+//  printf("The denumerator is %d\n", pi.denumerator);
+//  
+//  // change the denumerator
+//  
+//  ((fraction*)&(pi.denumerator))->numerator = 12; //get pointer to pi.denumerator, tell the pointer that it is pointing to a fraction struct then when we change the numerator we are changing the bits in the memory location of pi.denumerator hence
+//  
+//  printf("The denumerator is %d\n", pi.denumerator);
+//  
+//  return 0;
+//}
