@@ -10,69 +10,12 @@
 
 // hello world program
 
-//int main() {
-//    printf("Hello, World!\n");
-//    return 0;
-//}
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
 
-//assigning variables and reading their values
 
-//int main()
-//{
-//  int user_input;
-//  printf("Please input a number: \n");
-//  scanf("%d", &user_input);
-//  
-//  printf("The number you typed is %d \n", user_input);
-//  getchar();
-//  return 0;
-//}
-
-//concatenating strings
-//#include <string.h>
-//int main()
-//{
-//  char result[100];
-//  strcpy(result, "Hello ");
-//  strcat(result, "World");
-//  printf("%s", result);
-//  return 0;
-//}
-
-//int main() {
-//  char result[100];
-//  sprintf(result, "%s", "Hi");
-//  printf("%s", result);
-//}
-// passing arguments
-
-//int main(int argc, char *argv[])
-//{
-////  printf("Hi, ");
-////  printf(argv[1]);
-////  printf(". How are you?");
-//  
-//  // more secure way cos the string is checked
-//  printf("Hi %s. How are you?", argv[1]);
-//}
-
-//int main(int argc, char *argv[])
-//{
-//  int a,b;
-//  int sum, prod, quot, rem;
-//  sscanf(argv[1], "%d", &a);
-//  sscanf(argv[2], "%d", &b);
-//  
-//  sum = a + b;
-//  prod = a * b;
-//  quot = a / b;
-//  rem = a % b;
-//  
-//  printf("%d + %d = %d\n", a, b, sum);
-//  printf("%d * %d = %d\n", a, b, prod);
-//  printf("%d / %d = %d\n", a, b, quot);
-//  printf("%d %% %d = %d\n", a, b, rem);
-//}
 
 //if statements
 //int main(int argc, char *argv[]){
@@ -163,173 +106,6 @@
 //  return 0;
 //}
 
-// Another example of using structs
-
-//#include <string.h>
-//
-//struct Books {
-//  char title[50];
-//  char author[50];
-//  char subject[50];
-//  int book_id;
-//  
-//};
-//
-//int main( )
-//{
-//  struct Books Book1;        /* Declare Book1 of type Book */
-//  struct Books Book2;        /* Declare Book2 of type Book */
-//  
-//  /* book 1 specification */
-//  strcpy(Book1.title, "C programming");
-//  strcpy(Book1.author, "Nuha Ali");
-//  strcpy(Book1.subject, "C programming Tutorial");
-//  Book1.book_id = 6495407;
-//  
-//  /* book 2 specification */
-//  strcpy(Book2.title, "Telecom Billing");
-//  strcpy(Book2.author, "Zara Ali");
-//  strcpy(Book2.subject, "Telecom Billing Tutorial");
-//  Book2.book_id = 6495700;
-//  
-//  /* print Book1 info */
-//  printf( "Book 1 title : %s\n", Book1.title);
-//  printf( "Book 1 author : %s\n", Book1.author);
-//  printf( "Book 1 subject : %s\n", Book1.subject);
-//  printf( "Book 1 book_id : %d\n", Book1.book_id);
-//  
-//  /* print Book2 info */
-//  printf( "Book 2 title : %s\n", Book2.title);
-//  printf( "Book 2 author : %s\n", Book2.author);
-//  printf( "Book 2 subject : %s\n", Book2.subject);
-//  printf( "Book 2 book_id : %d\n", Book2.book_id);
-//  
-//  return 0;
-//}
-
-//// structure as function arguments(refactor the code above)
-//#include <string.h>
-//
-//struct Books {
-//  char title[50];
-//  char author[50];
-//  char subject[50];
-//  int book_id;
-//  
-//};
-//
-//int main( )
-//{
-//  void printBook(struct Books book);
-//  
-//  struct Books Book1;        /* Declare Book1 of type Book */
-//  struct Books Book2;        /* Declare Book2 of type Book */
-//  
-//  /* book 1 specification */
-//  strcpy(Book1.title, "C programming");
-//  strcpy(Book1.author, "Nuha Ali");
-//  strcpy(Book1.subject, "C programming Tutorial");
-//  Book1.book_id = 6495407;
-//  
-//  /* book 2 specification */
-//  strcpy(Book2.title, "Telecom Billing");
-//  strcpy(Book2.author, "Zara Ali");
-//  strcpy(Book2.subject, "Telecom Billing Tutorial");
-//  Book2.book_id = 6495700;
-//  
-//  /* print Book1 info */
-//  printBook(Book1);
-//  
-//  /* print Book2 info */
-//  printBook(Book2);
-//  
-//  return 0;
-//}
-//
-//void printBook(struct Books book){
-//  printf( "Book title : %s\n", book.title);
-//  printf( "Book author : %s\n", book.author);
-//  printf( "Book subject : %s\n", book.subject);
-//  printf( "Book book_id : %d\n", book.book_id);
-//}
-
-//// structures and pointers(using structure pointers)
-//#include <string.h>
-//
-//struct Books {
-//  char title[50];
-//  char author[50];
-//  char subject[50];
-//  int book_id;
-//
-//};
-//
-//int main( )
-//{
-//  void printBook(struct Books *book);
-//
-//  struct Books Book1;        /* Declare Book1 of type Book */
-//  struct Books Book2;        /* Declare Book2 of type Book */
-//
-//  /* book 1 specification */
-//  strcpy(Book1.title, "C programming");
-//  strcpy(Book1.author, "Nuha Ali");
-//  strcpy(Book1.subject, "C programming Tutorial");
-//  Book1.book_id = 6495407;
-//
-//  /* book 2 specification */
-//  strcpy(Book2.title, "Telecom Billing");
-//  strcpy(Book2.author, "Zara Ali");
-//  strcpy(Book2.subject, "Telecom Billing Tutorial");
-//  Book2.book_id = 6495700;
-//
-//  /* print Book1 info */
-//  printBook(&Book1);
-//
-//  /* print Book2 info */
-//  printBook(&Book2);
-//
-//  return 0;
-//}
-//
-//void printBook(struct Books *book){
-//  printf( "Book title : %s\n", book->title);
-//  printf( "Book author : %s\n", book->author);
-//  printf( "Book subject : %s\n", book->subject);
-//  printf( "Book book_id : %d\n", book->book_id);
-//}
-
-////Unions and accessing their values
-//
-//#include <string.h>
-//
-//union Data
-//{
-//  int i;
-//  float f;
-//  char  str[20];
-//};
-//
-//int main( )
-//{
-//  union Data data;
-//  
-//  data.i = 20;
-//  printf("Stored integer is %d\n", data.i);
-//  
-//  data.f = 20;
-//  printf("Stored float is %f\n", data.f);
-//  
-//  strcpy(data.str, "Hello");
-//  printf("Stored character is %s\n", data.str);
-//  
-////  printf( "Memory size occupied by data : %lu\n", sizeof(data));
-////  printf("Stored integer is %d\n", data.i); // We won't get the right values because the final value
-////  printf("Stored float is %f\n", data.f); // assigned has occupied the memory location
-////  printf("Stored character is %s\n", data.str);
-//  
-//  return 0;
-//}
 
 // C bit fields
 
@@ -484,13 +260,13 @@
 //}
 
 //swap function for any two variables of the same type
-#include <string.h>
-void swap(void *vp1, void *vp2, int size){
-  char buffer[size];
-  memcpy(buffer, vp1, size);
-  memcpy(vp1, vp2, size);
-  memcpy(vp2, buffer, size);
-}
+//#include <string.h>
+//void swap(void *vp1, void *vp2, int size){
+//  char buffer[size];
+//  memcpy(buffer, vp1, size);
+//  memcpy(vp1, vp2, size);
+//  memcpy(vp2, buffer, size);
+//}
 ////The right way
 //int main(){
 //  int x = 7;
@@ -517,16 +293,3 @@ void swap(void *vp1, void *vp2, int size){
 //}
 
 ////wrong way but it still compiles and executes
-
-//int main(){
-//  char *husband;
-//  char *wife;
-//  
-//  husband = strdup("Fitsum Seged");
-//  wife = strdup("Lemie");
-//  
-//  swap(husband, wife, sizeof(char *));
-//  
-//  printf("husband: %s\n", husband);// output husband: Lemie
-//  printf("wife: %s", wife);// output wife: Fitsum S
-//}
